@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="nn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alvisk ArXiv Skript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    pre {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Alvisk ArXiv Skript</h1>
+  <p>
+    Velkomen til dokumentasjonen for det magiske alviske arXiv-skriptet. Dette skriptet lèt deg kalle fram arXiv-artiklar og gje dei namn etter tittelen på artikkelen.
+  </p>
+
+  <h2>Bruk</h2>
+  <p>
+    Før du kan bruke dette skriptet, må du forsikre deg om at du har <code>curl</code> og <code>jq</code> installert på systemet ditt. For å kalle fram ein arXiv-artikkel, køyr skriptet og tast inn arXiv-IDen når du blir bedt om det:
+  </p>
+  <pre>
+$ ./alvisk_arxiv_skript.sh
+Enter the arXiv ID of the article you wish to summon:
+  </pre>
+  <p>
+    Skriptet vil så kalle fram artikkelen og lagre den som ein PDF-fil med eit namn basert på tittelen til artikkelen. Ein melding vil bli vist når nedlastinga er fullført.
+  </p>
+
+  <h2>Feil og problemløysing</h2>
+  <p>
+    Om det oppstår ein feil under bruken av skriptet, vil ei feilmelding bli vist med informasjon om kva som gjekk gale. Kontroller at arXiv-IDen du skreiv inn er gyldig og prøv igjen.
+  </p>
+  <p>
+    Hugs å sjekke at <code>curl</code> og <code>jq</code> er installert og tilgjengeleg på systemet ditt. Om du har spørsmål eller treng hjelp, kontakt prosjekteigaren gjennom GitLab på &lt;<a href="https://gitlab.com/<your-gitlab-username>/<your-gitlab-repo>">https://gitlab.com/<your-gitlab-username>/<your-gitlab-repo></a>&gt;.
+  </p>
+</body>
+</html>
